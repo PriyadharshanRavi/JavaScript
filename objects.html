@@ -1,0 +1,47 @@
+<script type="text/javascript">
+	var car = {
+		"brand" : "Honda",
+		"wheels" : 4,
+		"engine" : 1,
+		"owner" : "priyan"
+	};
+
+	// accessing the whole object properties
+	console.log(car); 
+
+	//accessing only one property from the object
+	var brandValue = car.brand;
+	console.log(brandValue); 
+
+	// Accessing objects with brackets. But, to do that the object key property must have space in it
+	var space = {
+		"my breakfast" : "Dosa",
+		"my lunch" : "Rice",
+		"my dinner" : "Chappathi"
+	};
+	var breakfast = space["my breakfast"];
+	console.log(breakfast);
+
+	//accessing object property with variable
+	var team = {
+		7 : "Dhoni",
+		10 : "Sachin",
+		12 : "Yuvi"
+	};
+	var playerNumber = 7;
+	var player = team[playerNumber];
+	console.log(player);
+
+	//updating the object properties
+	car.owner = "om";
+	var ownerValue = car.owner;
+	console.log(ownerValue);
+
+	//adding new property to an object
+	car.color = "White";
+	console.log(car);
+
+	//deleting an object property 
+	delete car.owner;
+	console.log(car);
+</script>

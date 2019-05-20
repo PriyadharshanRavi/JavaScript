@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var LOCAL_FORECAST = {
+		today : {min : 72, max : 80},
+		tomorrow : {min : 75, max : 85}
+	};
+
+	function getMaxOfToday(forecast){
+
+		var {
+			today: {max : maxOfToday}
+		} = forecast;
+		return maxOfToday;
+	}
+
+	console.log(maxOfToday(LOCAL_FORECAST));
+</script>

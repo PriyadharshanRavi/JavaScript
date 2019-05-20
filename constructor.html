@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	function makeClass(){
+		class Vegie{
+			constructor(name){
+				this.name = name;
+			}
+		}
+		return Vegie;
+	}
+
+	var Vegetable = makeClass();
+	var carrot = new Vegetable("carrot");
+	console.log(carrot.name);
+</script>

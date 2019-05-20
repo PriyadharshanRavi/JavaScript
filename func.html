@@ -1,0 +1,44 @@
+<script type="text/javascript">
+	function reusableFunction(){
+		console.log("test");
+	}
+
+	reusableFunction();
+	
+	//passing values to function with arguments
+	function reusableFunctionWithArg(a,b){
+		console.log(a + b);
+	}
+
+	reusableFunctionWithArg(100,10);
+
+	//using the returned value of an another person
+	var changed = 0;
+	function change(num){
+		return num+50;
+	}
+
+	changed=change(50);
+	console.log(changed);
+
+	//make function which returns a value with return
+	function something(num){
+		return num+11;
+	}
+
+	console.log(something(19));
+
+	//global scope explained
+	var myGlobalData = 1000;
+
+	function func1(){
+		let myLocalData = 1
+		console.log(myGlobalData+myLocalData);
+	}
+
+	function func2(){
+		console.log(myGlobalData+myLocalData); // Here we cannot access the mylocal data 
+	}
+	func1();
+	func2();	
+</script>

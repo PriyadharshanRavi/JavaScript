@@ -1,0 +1,30 @@
+<script type="text/javascript">
+	//old way of assingning 
+	var ass = {x:1, y:2, z:3};
+
+	var x = ass.x;
+	var y = ass.y;
+	var z = ass.z;
+
+	//de structuring variable- the new way of doing it
+
+	var {x:a, y:b, z:c} = ass;
+
+	//get the field of x in the object and copy it to a like that it goes on
+
+	//example problem
+
+	const AVG_TEM = {
+		today : 77.5,
+		tomorrow : 79
+	};
+
+	function getTempOfTomo(avgTemp){
+		var {
+			tomorrow : tempOfTomo
+		} = avgTemp;
+		return tempOfTomo;
+	}
+
+	console.log(getTempOfTomo(AVG_TEM));
+</script>

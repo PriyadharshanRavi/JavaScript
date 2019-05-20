@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	//spread opearor which allows us to iterate an array 
+
+	var spd1 = [1,2,3,4,5];
+	var  spd2;
+
+	(function(){
+		spd2 = [...spd1];
+		spd1[0] =0;
+	})();
+	console.log(spd1);
+	console.log(spd2);
+</script>
